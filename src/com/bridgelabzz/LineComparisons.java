@@ -35,7 +35,7 @@ import java.util.Scanner;
 			length2 = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
 			System.out.println("Length of Line 2: " + length2);
 
-			if (length1 == length2) {
+			if  (length1 == length2) {
 				System.out.println("Both Length are Equal");
 			} else {
 				System.out.println("Not Equal");
