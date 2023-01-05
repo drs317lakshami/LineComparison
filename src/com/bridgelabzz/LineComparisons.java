@@ -8,37 +8,24 @@ import java.util.Scanner;
  *
  */
 
-public class LineComparisons {
+	public class LineComparisons {
 
-	public static void main(String args[])
-    {
-		int x1,x2,y1,y2;
+		public static void main(String[] args) {
+			System.out.println("Welcome to the Line Compression Program");
 
-        double length;
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter the value of X1 X2 Y1 Y2");
 
-        Scanner sc=new Scanner(System.in);
+			int x1 = sc.nextInt();
+			int x2 = sc.nextInt();
+			int y1 = sc.nextInt();
+			int y2 = sc.nextInt();
 
-        System.out.println("enter x1 point");
+			double length;
 
-        x1=sc.nextInt();
+			length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+			System.out.println("Length of line: " + length);
 
-        System.out.println("enter y1 point");
+		}
 
-        y1=sc.nextInt();
-
-        System.out.println("enter x2point");	
-
-        x2=sc.nextInt();
-
-        System.out.println("enter y2 point");
-
-        y2=sc.nextInt();
-
-        length=Math.sqrt((x2-x1)^2 + (y2-y1)^2);
-
-        System.out.println("Length of Lines is : "+"("+x1+","+y1+"),"+"("+x2+","+y2+")===>"+length);
-
-
-    }
-
-    }
+	}
